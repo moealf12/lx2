@@ -1,0 +1,16 @@
+<Accordion defaultActiveKey="0" className={show}>
+<Card>
+<Card.Header>
+  <Accordion.Toggle as={Button} variant="link" eventKey="0">
+    Regester
+  </Accordion.Toggle>
+</Card.Header>
+<Accordion.Collapse eventKey="0">
+
+  <Card.Body>
+
+
+
+</Card.Body>
+</Accordion.Collapse>
+</Card>
