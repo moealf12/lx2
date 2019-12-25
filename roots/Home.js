@@ -19,6 +19,20 @@ router.patch('/user/:username',async (req,res)=>{
 
 
 
+router.get('/item/bid/:username',async (req,res)=>{
+  try{
+    const update = await Post.updateOne(
+      {username:req.params.username},
+      {$push:{bids:req.body.bids}}
+    );
+    res.json(update)
+  }catch(err){
+    res.json({mag:err})
+  }
+})
+
+
+
   router.patch('/user/add/:username',async (req,res)=>{
     try{
       const update = await Post.updateOne(
