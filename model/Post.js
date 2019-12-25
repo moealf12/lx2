@@ -83,7 +83,11 @@ const PostSchema = mongoose.Schema({
     {type:Object,exp:String}
   ],
   token:{type:String,require:true},
-  isSel:{type:Boolean,default:false}
+  isSel:{type:Boolean,default:false},
+    bids:[
+    {type:Object,exp:String}
+  ]
+  
 
 
 })
