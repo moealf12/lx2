@@ -19,7 +19,7 @@ router.patch('/user/:username',async (req,res)=>{
 
 
 
-router.get('/item/bid/:username',async (req,res)=>{
+router.patch('/item/bid/:username',async (req,res)=>{
   try{
     const update = await Post.updateOne(
       {username:req.params.username},
